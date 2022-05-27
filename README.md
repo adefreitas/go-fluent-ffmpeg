@@ -1,9 +1,9 @@
-# Go Fluent FFmpeg [![GoDoc](https://pkg.go.dev/badge/github.com//adefreitas/go-fluent-ffmpeg)](https://pkg.go.dev/github.com//adefreitas/go-fluent-ffmpeg)
+# Go Fluent FFmpeg [![GoDoc](https://pkg.go.dev/badge/github.com/adefreitas/go-fluent-ffmpeg)](https://pkg.go.dev/github.com/adefreitas/go-fluent-ffmpeg)
 
 A Go version of [node-fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg).
 
 ## Installation
-`go get -u github.com//adefreitas/go-fluent-ffmpeg`
+`go get -u github.com/adefreitas/go-fluent-ffmpeg`
 
 ### Requirements
 You will need FFmpeg installed on your machine, or you can specify a path to a binary:

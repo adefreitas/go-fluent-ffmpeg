@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	fluentffmpeg "github.com//adefreitas/go-fluent-ffmpeg"
+	fluentffmpeg "github.com/adefreitas/go-fluent-ffmpeg"
 )
 
 func main() {

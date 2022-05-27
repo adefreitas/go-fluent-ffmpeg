@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	fluentffmpeg "github.com//adefreitas/go-fluent-ffmpeg"
+	fluentffmpeg "github.com/adefreitas/go-fluent-ffmpeg"
 )
 
 func TestArgsOrder(t *testing.T) {

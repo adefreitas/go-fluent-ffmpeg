@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"log"
 
-	fluentffmpeg "github.com//adefreitas/go-fluent-ffmpeg"
+	fluentffmpeg "github.com/adefreitas/go-fluent-ffmpeg"
 )
 
 func main() {
