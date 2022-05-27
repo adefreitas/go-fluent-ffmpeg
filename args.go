@@ -2,7 +2,7 @@ package fluentffmpeg
 
 // Args contains the input and output args set for FFmpeg
 type Args struct {
-	input         inputArgs
+	inputs        []inputArgs
 	output        outputArgs
 	globalOptions []string
 }

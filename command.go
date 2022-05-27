@@ -72,8 +72,9 @@ func (c *Command) BuildWithContext(ctx context.Context) *exec.Cmd {
 // GetArgs returns the arguments for the FFmpeg command.
 func (c *Command) GetArgs() []string {
 	var options []string
-
-	options = append(options, c.getArgs(c.Args.input, "pipeInput", "inputPath")...)
+	for i := 0; i < len(c.Args.inputs); i++ {
+		options = append(options, c.getArgs(c.Args.inputs[i], "pipeInput", "inputPath")...)
+	}
 	options = append(options, c.getArgs(c.Args.output, "pipeOutput", "outputPath")...)
 
 	return append(options, c.Args.globalOptions...)

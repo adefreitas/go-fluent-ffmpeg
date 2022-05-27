@@ -1,4 +1,4 @@
-module github.com/modfy/fluent-ffmpeg
+module github.com/adefreitas/fluent-ffmpeg
 
 go 1.15
 

@@ -12,7 +12,7 @@ import (
 func TestFieldsHaveGetters(t *testing.T) {
 	cmd := NewCommand("")
 
-	if err := testFieldsHaveGetters(cmd.Args.input, cmd); err != nil {
+	if err := testFieldsHaveGetters(cmd.Args.inputs, cmd); err != nil {
 		t.Error(err.Error())
 		return
 	}

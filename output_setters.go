@@ -87,13 +87,6 @@ func (c *Command) AudioBitRate(v int) *Command {
 	return c
 }
 
-// NativeFramerateInput sets the native frame rate
-func (c *Command) NativeFramerateInput(v bool) *Command {
-	c.Args.input.nativeFramerateInput = v
-
-	return c
-}
-
 // Preset sets the preset
 func (c *Command) Preset(v string) *Command {
 	c.Args.output.preset = v

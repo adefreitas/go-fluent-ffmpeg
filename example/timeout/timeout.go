@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	fluentffmpeg "github.com/modfy/fluent-ffmpeg"
+	fluentffmpeg "github.com/adefreitas/fluent-ffmpeg"
 )
 
 func main() {

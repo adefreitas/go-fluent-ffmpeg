@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	fluentffmpeg "github.com/modfy/fluent-ffmpeg"
+	fluentffmpeg "github.com/adefreitas/fluent-ffmpeg"
 )
 
 func main() {
