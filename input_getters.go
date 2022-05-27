@@ -1,22 +1,21 @@
 package fluentffmpeg
 
-// // GetInputPath returns the input file path
-// func (a *Args) GetInputPath() []string {
-// 	var result []string
-// 	for i:= 0; i<len(a.inputs); i++ {
-// 		if a.inputs[i].inputPath != "" {
-// 			if a.inputs[i].nativeFramerateInput {
-// 				result = append(result, []string{"-re", "-i", a.inputs[i].inputPath} )
-// 				return []string{"-re", "-i", a.inputs[i].inputPath}
-// 			}
-// 			return []string{"-i", a.inputs[i].inputPath}
-// 		}
-// 	}
+// GetInputPath returns the input file path
+func (a *Args) GetInputPath() []string {
+	var result []string
+	for i := 0; i < len(a.inputs); i++ {
+		if a.inputs[i].inputPath != "" {
+			if a.inputs[i].nativeFramerateInput {
+				result = append(result, "-re", "-i", a.inputs[i].inputPath)
+			}
+			result = append(result, "-i", a.inputs[i].inputPath)
+		}
+	}
+	return result
 
-// 	return nil
-// }
+}
 
-// // GetPipeInput returns whether or not ffmpeg is set to receive piped input
+// GetPipeInput returns whether or not ffmpeg is set to receive piped input
 // func (a *Args) GetPipeInput() []string {
 // 	if a.input.pipeInput != false {
 // 		return []string{"-i", "pipe:0"}
